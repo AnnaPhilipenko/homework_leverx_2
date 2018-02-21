@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	font-family: "Monserrat", sans-serif;
+	background: #8eb4d4;
+	font-size: 1em;
+	overflow: auto;
+
+}
+
+header{
+	position: fixed;
+	width: 100%;
+	min-height: 40px;
+	border-bottom: 2px #00406b solid;
+	background: white;
+	z-index: 1;
+}
+
+.wrapper{
+	position: absolute;
+	width: 70%;
+    left: 15%;
+   	margin: auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    height: auto;
+}
+
+.order-list{
+	width: 30%;
+	float: left;
+	margin-top: 41px;
+	position: relative;
+	height: 100%;
+}
+
+.order-list .order-count{
+	padding-top: 1%;
+	text-align: center;
+}
+
+.order-list .search-box input{
+	width: 97%;
+	min-height: 30px;
+	margin:1.5% 1.5%;
+	background-image: url('../img/search.png');   
+    background-repeat: no-repeat; 
+    background-position: 95%; 
+    background-size: 20px 20px;
+    border:1px solid #00406b;
+    outline: none;
+}
+
+.wrapper #orders{
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: inherit;
+	border-top: 1px #ccc solid;
+	border-bottom: 1px #ccc solid;
+}
+
+#orders::-webkit-scrollbar {
+	width: 7px;
+	background: #bcc3c4;
+}
+#orders::-webkit-scrollbar-thumb{
+	width: 7px;
+	background: #ccc;
+}
+
+#orders .order-catalog{
+	 list-style-type: none;
+	 border-bottom: 1px #ccc solid;
+	 width: 100%;
+}
+
+
+#orders .order-catalog:hover{
+	background: #edf3fc;
+}
+
+#orders .order-catalog .order-div{
+	padding: 15px 15px 15px 15px;
+}
+
+#orders .order-catalog .header-span{
+	font-size: 1em;
+	font-weight: bold;
+	display: block;
+	width: 50%;
+	float: left;
+}
+
+#orders .order-catalog .date-span{
+	font-size: 1.2em;
+	display: block;
+	width: 50%;
+	float: left;
+	text-align: right;
+}
+
+#orders .order-catalog .customer-span{
+	font-size: 0.8em;
+	float: left;
+	padding-top:3%;
+	font-weight: lighter;
+	display: block;
+	width: 40%;
+
+}
+
+#orders .order-catalog .status-span{
+	font-size: 0.8em;
+	padding-top:3%;
+	font-weight: lighter;
+	display: block;
+	width: 50%;
+	float: left;
+	text-align: right;
+}
+
+#orders .order-catalog .shipped-span{
+	font-size: 0.8em;
+	font-weight: lighter;
+}
+
+
+
+input::-webkit-input-placeholder {font-style: italic;padding-left: 5%;}
+input::-moz-placeholder{font-style: italic;padding-left: 5%;}/* Firefox 19+ */
+input:-ms-input-placeholder{font-style: italic;padding-left: 5%;}
+
+.order-review{
+	width: 70%;
+	height: 100%;
+	float: left;
+    margin-top: 41px;
+}
+
+
+
+.order-review .header-order-review{
+	border-bottom: 2px #C5DAFC solid;
+	background: #edf3fc;
+	padding: 0.5%;
+}
+
+.order-review .header-order-review div{
+	text-align: center;
+}
+ 
+.order-review .order-review-customer{
+	height: 100%;
+	border-bottom: 2px #C5DAFC solid;
+	background: #edf3fc;
+	padding-bottom: 3%;
+}
+
+.order-review .order-review-customer div{
+	margin: 1% 5%;
+	font-size: 0.8em;
+	font-color:#808080;
+}
+
+ .order-review-customer h1{
+	padding: 3% 5% 2%;
+	font-size: 1.3em;
+	font-color:#808080;
+	font-weight: normal;
+}
+
+.order-review .order-review-customer .switchers{
+	margin: 2% 5% 0%;
+}
+.order-review .order-review-customer .switchers #deliv{
+	background-image: url('../img/deliver.png');
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-position: center;
+	border:1px #005f9e solid;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.order-review .order-review-customer .switchers #deliv:active{
+	background-color: #005f9e;
+}
+
+.order-review .order-review-customer .switchers #person{
+	background-image: url('../img/customer.png');
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-position: center;
+	border:1px #005f9e solid;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-left: 1%;
+}
+
+.order-review .order-review-customer .switchers #person:active{
+	background-color: #005f9e;
+}
+
+.order-review .order-review-customer .switchers #map{
+	background-image: url('../img/map.png');
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-position: center;
+	border:1px #005f9e solid;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-left: 1%;
+}
+
+.order-review .order-review-customer .switchers #map:active{
+	background-color: #005f9e;
+}
+
+.order-review .order-shipped-address{
+	border-bottom:2px solid #C5DAFC;
+	padding-bottom: 4%;
+}
+ .order-review .order-shipped-address h1{
+	font-weight: normal;
+	margin: 2% 5% 1%;
+	font-size: 1.3em;
+
+}
+
+.order-review .order-shipped-address div{
+	margin-left: 30%;
+	padding-bottom: 0.5%;
+	font-size: 0.8em;
+}
+
+hr{
+	width: 95%;
+	margin-left: 2.5%;
+	height: 2px;
+	background-color: #DEE3ED;
+	border:none;
+	margin-bottom: 4%;
+}
+
+.order-line-items{
+	background-color: #F8F7F7;
+	padding-bottom: 1%;
+}
+
+.order-line-items h1{
+	font-weight: normal;
+	padding: 2% 5% 1%;
+	font-size: 1.3em;
+}
+
+table{
+  background: white;
+  max-width: 95%;
+  width: 95%;
+  border-collapse: collapse;
+  text-align: left;
+  margin-left: 2.5%;
+  border-top: 2px #ccc solid;
+  border-bottom:2px #ccc solid;
+}
+
+th {
+  font-weight: normal;
+  border-bottom: 2px solid #ccc;
+  padding: 10px 8px;
+  background-color: #F8F7F8;
+}
+td{
+  padding: 9px 15px;
+  border-bottom:  1px #F0F0F0 solid;
+  font-weight: bold;
+}
+
+tr:hover td {
+	color: #005f9e;
+}
+
+.footer{
+	height:20px;
+	background-color: #00406b;
+	clear: both;
+ 	margin-bottom: 0;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+	<header></header>
+
+<div class = "wrapper">
+	<div class = "main">
+	<div class = "order-list">
+		<div class = "order-count">
+			<span> Orders</span>
+		</div>
+		<div class = "search-box">
+			<input type="search" id ="search" placeholder="Поиск" onkeyup = "searchFunc()"/>
+		</div>
+		<div id = "orders">
+			<ul id = "orders-ul">
+			</ul>
+		</div>
+	</div>
+	<div class = "order-review" id = "order-review">
+		<div class = "header-order-review">
+			<div>Order</div>
+		</div>
+		<div id = "order-show">
+		<div class = "order-review-customer" id = "order-review-customer">
+			<h1>Order <span id = "order-name"></span></h1>
+			<div>Customer:
+				<span id = "customer-name"></span>
+			</div>
+			<div>Ordered:
+				<span id = "ordered-date"></span>
+			</div>
+			<div> Shipped at:
+				<span id = "shipped-date"></span>
+			</div>
+			<div class = "switchers" id = "switchers">
+					<button id = "deliv"></button>
+					<button id = "person"></button>
+					<button id = "map"></button>
+			</div>
+		</div>
+		<div class = "order-shipped-address">
+			<h1>Shipping Address</h1>
+			<hr>
+				<div>Name:<span id = "address-name"></span></div>
+			
+			<div>Street:
+				<span id = "address-street"></span>
+			</div>
+			<div>ZIP Code:
+				<span id = "address-code"></span>
+			</div>
+			<div> Region:
+				<span id = "region"></span>
+			</div>
+			<div> Country:
+				<span id = "country"></span>
+			</div>
+		</div>
+		<div class = "order-line-items">
+			<h1>Line items</h1>
+			<table id = "product-table">
+			</table>
+		</div>
+
+	</div>
+</div>
+<div class = "footer">
+	</div>	
+	</div>
+</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
